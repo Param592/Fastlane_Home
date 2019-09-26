@@ -47,14 +47,14 @@ platform :ios do
   	   	 run_tests(scheme: "Fastlane_Home")
  	end
 
-	lane :Code_Coverage do
-		slather(
-  			build_directory: "Code_Coverage",
-  			input_format: "auto",
-  			scheme: "Fastlane_Home",
-  			proj: "Fastlane_Home.xcodeproj"
-		)
-	end
+	# lane :Code_Coverage do
+# 		slather(
+#   			build_directory: "Code_Coverage",
+#   			input_format: "auto",
+#   			scheme: "Fastlane_Home",
+#   			proj: "Fastlane_Home.xcodeproj"
+# 		)
+# 	end
 	
 	lane :Build do
 		xcodebuild(
