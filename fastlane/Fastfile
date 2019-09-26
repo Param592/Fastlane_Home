@@ -47,7 +47,7 @@ platform :ios do
   	   	 run_tests(scheme: "Fastlane_Home")
  	end
 
-	lane: Code_Coverage do
+	lane :Code_Coverage do
 		slather(
   			build_directory: "Code_Coverage",
   			input_format: "bah",
@@ -56,7 +56,7 @@ platform :ios do
 		)
 	end
 	
-	lane: Build do
+	lane :Build do
 		xcodebuild(
   			archive: true,
   			archive_path: "./build-dir/Fastlane_Home.xcarchive",
