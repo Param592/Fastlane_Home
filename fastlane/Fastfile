@@ -42,7 +42,7 @@ platform :ios do
   			extra_arg: "-Wno-everything"# Additional argument to append to the compiler command line
 			)	
 		end
-  	lane :tests do
- 	 run_tests(scheme: "Fastlane_Home")
-	end
+  	# lane :tests do
+#  	 run_tests(scheme: "Fastlane_Home")
+# 	end
 end
