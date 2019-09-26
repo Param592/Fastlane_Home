@@ -52,7 +52,6 @@ platform :ios do
   			build_directory: "Code_Coverage",
   			input_format: "auto",
   			scheme: "Fastlane_Home",
-  			proj: "Fastlane_Home.xcodeproj"
 		)
 	end
 	
