@@ -51,8 +51,8 @@ platform :ios do
 		slather(
   			build_directory: "Code_Coverage",
   			input_format: "auto",
-  			scheme: "Fastlane_Home",
-  			proj: "Fastlane_Home.xcodeproj"
+  			proj: "Fastlane_Home.xcodeproj",
+  			scheme: "Fastlane_Home"
 		)
 	end
 	
