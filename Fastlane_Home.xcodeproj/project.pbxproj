@@ -433,15 +433,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = G385A2CHPU;
 				INFOPLIST_FILE = Fastlane_Home/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "aman.com.Fastlane-Home";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.btor.Fastlane-Home";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "oPhone Dev Team Provisioning Profile";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -450,15 +452,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = G385A2CHPU;
 				INFOPLIST_FILE = Fastlane_Home/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "aman.com.Fastlane-Home";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.btor.Fastlane-Home";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "oPhone Dev Team Provisioning Profile";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -467,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G385A2CHPU;
 				INFOPLIST_FILE = Fastlane_HomeTests/Info.plist;
@@ -477,6 +482,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "aman.com.Fastlane-HomeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fastlane_Home.app/Fastlane_Home";
 			};
@@ -486,6 +492,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G385A2CHPU;
 				INFOPLIST_FILE = Fastlane_HomeTests/Info.plist;
@@ -496,6 +503,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "aman.com.Fastlane-HomeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fastlane_Home.app/Fastlane_Home";
 			};
@@ -504,6 +512,7 @@
 		F1C74FD5233C965500C60DCE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G385A2CHPU;
 				INFOPLIST_FILE = Fastlane_HomeUITests/Info.plist;
@@ -514,6 +523,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "aman.com.Fastlane-HomeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Fastlane_Home;
 			};
@@ -522,6 +532,7 @@
 		F1C74FD6233C965500C60DCE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G385A2CHPU;
 				INFOPLIST_FILE = Fastlane_HomeUITests/Info.plist;
@@ -532,6 +543,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "aman.com.Fastlane-HomeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Fastlane_Home;
 			};
