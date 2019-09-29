@@ -50,9 +50,14 @@ platform :ios do
 		
   	 lane :tests do
   	   	 run_tests(scheme: "Fastlane_Home")
-  	   	  slather(build_directory: 'build', input_format: 'profdata', scheme: 'Fastlane_Home', html: true, ignore: [''], proj: 'Fastlane_Home.xcodeproj', binary_basename: 'Fastlane_Home', source_directory: '../Fastlane_Home', output_directory: 'fastlane/test_output/coverage')
-
-
+  		slather(
+     	 output_directory: "fastlane/html",
+     	 html: true,
+     	 scheme: "Fastlane_Home",
+     	 proj: "Fastlane_Home.xcodeproj",
+     	 verbose: true,
+     	 show: true
+		)
  	end
 
 	lane :Code_Coverage do
