@@ -68,7 +68,7 @@ platform :ios do
 # #   arch: 'i386', # optional
 #   			report_output_path: 'analyzer_report', # optional
 #   			log_file_path: 'analyzer_report.log', # optional
-)
+# )
 
  	end
 	
