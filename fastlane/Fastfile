@@ -49,7 +49,12 @@ platform :ios do
 		end
 		
   	 lane :tests do
-  	   	 run_tests(scheme: "Fastlane_Home")
+  	   	 scan(scheme: "Fastlane_Home",
+  	   	 code_coverage:YES
+  	   	 )
+ 	end
+ 	 lane :code_coverage do
+  	   	
   		 slather(
      	 		output_directory: "fastlane/html",
      	 		html: true,
