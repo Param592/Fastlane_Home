@@ -17,36 +17,36 @@ default_platform(:ios)
 
 BUILD_PATH="./build"
 DERIVED_DATA_PATH = "#{BUILD_PATH}/derived_data"
-PROJECT_NAME='BonMot.xcodeproj'
+PROJECT_NAME='Fastlane_Home.xcodeproj'
 
 
 platform :ios do
   desc "Description of what the lane does"
- #   	lane :static_analysis do
-# 		oclint( 
-#   			compile_commands: "commands.json",    # The JSON compilation database, use xctool reporter "json-compilation-database"
-#  			#select_regex: /ViewController.m/,     # Select all files matching this regex
-#   			#exclude_regex: /Test.m/,    # Exclude all files matching this regex
-#   			#report_type: "pmd",         # The type of the report (default: html)
-#   			#max_priority_1: 10,         # The max allowed number of priority 1 violations
-#   			#max_priority_2: 100,        # The max allowed number of priority 2 violations
-#   			#max_priority_3: 1000,       # The max allowed number of priority 3 violations
-#   			thresholds: [     # Override the default behavior of rules
-#     			"LONG_LINE=200",
-#     			"LONG_METHOD=200"
-#   			],
-#   			enable_rules: [   # List of rules to pick explicitly
-#     			"DoubleNegative",
-#     			"SwitchStatementsDon'TNeedDefaultWhenFullyCovered"
-#   			],
-#   			#disable_rules: ["GotoStatement"],     # List of rules to disable
-#   			list_enabled_rules: true,   # List enabled rules
-#   			enable_clang_static_analyzer: true,   # Enable Clang Static Analyzer, and integrate results into OCLint report
-#   			enable_global_analysis: true,         # Compile every source, and analyze across global contexts (depends on number of source files, could results in high memory load)
-#   			allow_duplicated_violations: true,    # Allow duplicated violations in the OCLint report
-#   			extra_arg: "-Wno-everything"# Additional argument to append to the compiler command line
-# 			)	
-# 		end
+   	lane :static_analysis do
+		oclint( 
+  			compile_commands: "compile_commands.json",    # The JSON compilation database, use xctool reporter "json-compilation-database"
+ 			#select_regex: /ViewController.m/,     # Select all files matching this regex
+  			#exclude_regex: /Test.m/,    # Exclude all files matching this regex
+  			#report_type: "pmd",         # The type of the report (default: html)
+  			#max_priority_1: 10,         # The max allowed number of priority 1 violations
+  			#max_priority_2: 100,        # The max allowed number of priority 2 violations
+  			#max_priority_3: 1000,       # The max allowed number of priority 3 violations
+  			thresholds: [     # Override the default behavior of rules
+    			"LONG_LINE=200",
+    			"LONG_METHOD=200"
+  			],
+  			enable_rules: [   # List of rules to pick explicitly
+    			"DoubleNegative",
+    			"SwitchStatementsDon'TNeedDefaultWhenFullyCovered"
+  			],
+  			#disable_rules: ["GotoStatement"],     # List of rules to disable
+  			list_enabled_rules: true,   # List enabled rules
+  			enable_clang_static_analyzer: true,   # Enable Clang Static Analyzer, and integrate results into OCLint report
+  			enable_global_analysis: true,         # Compile every source, and analyze across global contexts (depends on number of source files, could results in high memory load)
+  			allow_duplicated_violations: true,    # Allow duplicated violations in the OCLint report
+  			extra_arg: "-Wno-everything"# Additional argument to append to the compiler command line
+			)	
+		end
 		
   	 lane :tests do
   	   	 run_tests(scheme: "Fastlane_Home")
@@ -58,21 +58,9 @@ platform :ios do
      	 		verbose: true,
      	 		show: true
 			)
-# 		clang_analyzer(# 
-#   			analyzer_path: '~/analyze_tools/bin', # optional
-#   			clean: true, # optional
-# #   			workspace: 'Test.xcworkspace', # optional, cannot be used together with `project` option
-#   			project: 'Fastlane_Home.xcodeproj', # optional, cannot be used together with `workspace` option
-#   			configuration: 'Debug', # optional
-#   			sdk: 'iphonesimulator', # optional
-# #   arch: 'i386', # optional
-#   			report_output_path: 'analyzer_report', # optional
-#   			log_file_path: 'analyzer_report.log', # optional
-# )
-
  	end
 	
-	lane :Build do
+	lane :build do
 		xcodebuild(
   			archive: true,
   			archive_path: "./build-dir/Fastlane_Home.xcarchive",
