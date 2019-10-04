@@ -35,10 +35,10 @@ platform :ios do
     			"LONG_LINE=200",
     			"LONG_METHOD=200"
   			],
-  			# enable_rules: [   # List of rules to pick explicitly
-#     			"DoubleNegative",
-#     			"SwitchStatementsDon'TNeedDefaultWhenFullyCovered"
-#   			],
+  			enable_rules: [   # List of rules to pick explicitly
+    			"DoubleNegative",
+    			"SwitchStatementsDon'TNeedDefaultWhenFullyCovered"
+  			],
   			#disable_rules: ["GotoStatement"],     # List of rules to disable
   			list_enabled_rules: true,   # List enabled rules
   			enable_clang_static_analyzer: true,   # Enable Clang Static Analyzer, and integrate results into OCLint report
