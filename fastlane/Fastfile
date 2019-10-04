@@ -49,8 +49,7 @@ platform :ios do
 		end
 		
   	 lane :tests do
-  	   	 scan(scheme: "Fastlane_Home",
-  	   	 code_coverage:YES
+  	   	 scan(scheme: "Fastlane_Home"
   	   	 )
  	end
  	 lane :code_coverage do
